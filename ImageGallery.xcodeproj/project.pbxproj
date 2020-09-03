@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EB71F4B2500679A00058709 /* imageNames.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4EB71F4A2500679A00058709 /* imageNames.txt */; };
+		4EB71F4D2500709200058709 /* getImageNames.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4EB71F4C250068A600058709 /* getImageNames.sh */; };
 		4ED9D6A42500090A001B4D9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED9D6A32500090A001B4D9E /* AppDelegate.m */; };
 		4ED9D6A72500090A001B4D9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED9D6A62500090A001B4D9E /* ViewController.m */; };
 		4ED9D6AA2500090A001B4D9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED9D6A82500090A001B4D9E /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4EB71F4A2500679A00058709 /* imageNames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = imageNames.txt; sourceTree = "<group>"; };
+		4EB71F4C250068A600058709 /* getImageNames.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = getImageNames.sh; sourceTree = "<group>"; };
 		4ED9D69F2500090A001B4D9E /* ImageGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED9D6A22500090A001B4D9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4ED9D6A32500090A001B4D9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 		4ED9D6A12500090A001B4D9E /* ImageGallery */ = {
 			isa = PBXGroup;
 			children = (
+				4EB71F4A2500679A00058709 /* imageNames.txt */,
+				4EB71F4C250068A600058709 /* getImageNames.sh */,
 				4ED9D6A22500090A001B4D9E /* AppDelegate.h */,
 				4ED9D6A32500090A001B4D9E /* AppDelegate.m */,
 				4ED9D6A52500090A001B4D9E /* ViewController.h */,
@@ -81,6 +87,7 @@
 				4ED9D69B2500090A001B4D9E /* Sources */,
 				4ED9D69C2500090A001B4D9E /* Frameworks */,
 				4ED9D69D2500090A001B4D9E /* Resources */,
+				4EB71F4E2500709600058709 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -128,13 +135,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB71F4D2500709200058709 /* getImageNames.sh in Resources */,
 				4ED9D6AF2500090A001B4D9E /* LaunchScreen.storyboard in Resources */,
 				4ED9D6AC2500090A001B4D9E /* Assets.xcassets in Resources */,
 				4ED9D6AA2500090A001B4D9E /* Main.storyboard in Resources */,
+				4EB71F4B2500679A00058709 /* imageNames.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EB71F4E2500709600058709 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Running get image script\"\n$SRCROOT/ImageGallery/getImageNames.sh\necho \"Ended running script\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4ED9D69B2500090A001B4D9E /* Sources */ = {

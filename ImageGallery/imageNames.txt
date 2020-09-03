@@ -1,0 +1,7 @@
+./ImageGallery/Assets.xcassets/blacknblue.imageset
+./ImageGallery/Assets.xcassets/blacknwhite.imageset
+./ImageGallery/Assets.xcassets/blue.imageset
+./ImageGallery/Assets.xcassets/pink.imageset
+./ImageGallery/Assets.xcassets/rawr.imageset
+./ImageGallery/Assets.xcassets/red.imageset
+./ImageGallery/Assets.xcassets/shiny.imageset
